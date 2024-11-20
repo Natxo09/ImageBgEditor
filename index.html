@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Background Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image Background Editor</h1>
+  
+  <div id="uploader">
+    <input type="file" id="imageUpload" accept="image/*">
+  </div>
+
+  <div id="editor">
+    <canvas id="canvas"></canvas>
+    <div id="gradients">
+      <button data-gradient="gradient1">Gradient 1</button>
+      <button data-gradient="gradient2">Gradient 2</button>
+      <button data-gradient="gradient3">Gradient 3</button>
+      <button data-gradient="gradient4">Gradient 4</button>
+      <button data-gradient="gradient5">Gradient 5</button>
+      <button data-gradient="gradient6">Gradient 6</button>
+      <button data-gradient="gradient7">Gradient 7</button>
+      <button data-gradient="gradient8">Gradient 8</button>
+      <button data-gradient="gradient9">Gradient 9</button>
+      <button data-gradient="gradient10">Gradient 10</button>
+      <button data-gradient="gradient11">Gradient 11</button>
+      <button data-gradient="gradient12">Gradient 12</button>
+      <button data-gradient="gradient13">Gradient 13</button>
+      <button data-gradient="gradient14">Gradient 14</button>
+      <button data-gradient="gradient15">Gradient 15</button>
+      <button data-gradient="gradient16">Gradient 16</button>
+      <button data-gradient="gradient17">Gradient 17</button>
+      <button data-gradient="gradient18">Gradient 18</button>
+      <button data-gradient="gradient19">Gradient 19</button>
+      <button data-gradient="gradient20">Gradient 20</button>
+      <button data-gradient="gradient21">Gradient 21</button>
+      <button data-gradient="gradient22">Gradient 22</button>
+      <button data-gradient="gradient23">Gradient 23</button>
+      <button data-gradient="gradient24">Gradient 24</button>
+      <button data-gradient="gradient25">Gradient 25</button>
+    </div>
+    <button id="download">Download Image</button>
+  </div>
+  <div id="marginControl">
+    <label for="marginSlider">Margin Size: </label>
+    <input type="range" id="marginSlider" min="0" max="200" value="100">
+    <span id="marginValue">100</span> px
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Natxo | 
+      <a href="https://github.com/yourusername/repo-name" target="_blank">
+        <svg height="24" width="24" viewBox="0 0 16 16">
+          <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

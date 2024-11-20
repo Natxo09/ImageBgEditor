@@ -1,0 +1,243 @@
+/* Base styles */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Upload area */
+  #uploader {
+    margin-bottom: 2rem;
+  }
+  
+  #imageUpload {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px dashed #475569;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  
+  #imageUpload:hover {
+    border-color: #60a5fa;
+  }
+  
+/* Editor section */
+#editor {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  canvas {
+    max-width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: #1e293b;
+    border: 1px solid #334155;
+  }
+  
+  
+/* Gradients grid */
+#gradients {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  #gradients button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #gradients button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  /* Gradient styles */
+  #gradients button[data-gradient="gradient1"] {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  }
+  #gradients button[data-gradient="gradient2"] {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+  #gradients button[data-gradient="gradient3"] {
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+  }
+  #gradients button[data-gradient="gradient4"] {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: black;
+  }
+  #gradients button[data-gradient="gradient5"] {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+  }
+  #gradients button[data-gradient="gradient6"] {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+  }
+  #gradients button[data-gradient="gradient7"] {
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+  }
+  #gradients button[data-gradient="gradient8"] {
+    background: linear-gradient(45deg, #fddb92, #d1fdff);
+    color: black;
+  }
+  #gradients button[data-gradient="gradient9"] {
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+  }
+  #gradients button[data-gradient="gradient10"] {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  }
+  #gradients button[data-gradient="gradient11"] {
+    background: linear-gradient(45deg, #ee9ca7, #ffdde1);
+    color: black;
+  }
+  #gradients button[data-gradient="gradient12"] {
+    background: linear-gradient(45deg, #42275a, #734b6d);
+  }
+  #gradients button[data-gradient="gradient13"] {
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+  }
+  #gradients button[data-gradient="gradient14"] {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+  }
+  #gradients button[data-gradient="gradient15"] {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+  }
+  #gradients button[data-gradient="gradient16"] {
+    background: linear-gradient(45deg, #4ca1af, #c4e0e5);
+  }
+  #gradients button[data-gradient="gradient17"] {
+    background: linear-gradient(45deg, #ec008c, #fc6767);
+  }
+  #gradients button[data-gradient="gradient18"] {
+    background: linear-gradient(45deg, #8a2387, #e94057, #f27121);
+  }
+  #gradients button[data-gradient="gradient19"] {
+    background: linear-gradient(45deg, #009fff, #ec2f4b);
+  }
+  #gradients button[data-gradient="gradient20"] {
+    background: linear-gradient(45deg, #7f00ff, #e100ff);
+  }
+  #gradients button[data-gradient="gradient21"] {
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+  }
+  #gradients button[data-gradient="gradient22"] {
+    background: linear-gradient(45deg, #1f4037, #99f2c8);
+  }
+  #gradients button[data-gradient="gradient23"] {
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+  }
+  #gradients button[data-gradient="gradient24"] {
+    background: linear-gradient(45deg, #00c9ff, #92fe9d);
+  }
+  #gradients button[data-gradient="gradient25"] {
+    background: linear-gradient(45deg, #2b5876, #4e4376);
+  }
+  
+/* Margin control */
+/* Margin control - with added spacing */
+#marginControl {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  
+  #marginSlider {
+    width: 100%;
+    height: 4px;
+    background: #334155;
+    border-radius: 2px;
+    appearance: none;
+    outline: none;
+  }
+  
+  #marginSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #60a5fa;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  #marginSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+/* Download button */
+#download {
+    background: linear-gradient(to right, #60a5fa, #818cf8);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  #download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #666;
+  }
+  
+  footer svg {
+    vertical-align: middle;
+  }
